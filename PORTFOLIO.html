@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeTeam | 3D Моделирование и Веб-разработка</title>
+    <meta name="description" content="Профессиональные 3D модели и уникальные сайты для вашего бизнеса. Мы поможем реализовать ваши идеи и достичь успеха.">
+    
+    <!-- Подключаем Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Подключаем иконки Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Подключаем Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем наш CSS -->
+    <link rel="stylesheet" href="./PORTFOLIO.css">
+    <link rel="stylesheet" href="./theme-dark.css">
+    
+    <link rel="shortcut icon" href="./png/nl1.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./png/nl1.png" alt="Логотип CreativeTeam" style="height: 100px;">
+                <span>CreativeTeam</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Портфолио</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+         <button class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#contactModal">Связаться с нами</button>
+                         <!-- Переключатель темы -->
+<div class="theme-switch-wrapper ms-3">
+  <label class="theme-switch" for="themeSwitch">
+    <input type="checkbox" id="themeSwitch" />
+    <div class="slider round"></div>
+  </label>
+  <label for="themeSwitch" class="theme-switch-label">   Темная тема</label>
+</div>
+       
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой секция -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="hero-title" style="color: rgba(98, 43, 7, 0.629);">МЫ КОМАНДА НАЧИНАЮЩИХ СПЕЦИАЛИСТОВ</h1>
+                        <p class="hero-description">
+                            Мы специализируемся на создании качественных 3D моделей
+                            и уникальных сайтов для различных целей. Мы готовы помочь
+                            вам реализовать ваши идеи и достичь успеха в вашем бизнесе.
+                            Давайте создадим что-то уникальное вместе!
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#portfolioModal">Наши работы</button>
+                            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#contactModal">Обсудить проект</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <img src="./png/nl1.png" alt="CreativeTeam" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about">
+                <i class="bi bi-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Секция о нас -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Почему выбирают нас</h2>
+                    <p class="about-text">
+                        Мы молодая, но амбициозная команда специалистов, которые горят своим делом. 
+                        Наш подход сочетает в себе креативность, техническое мастерство и внимание к деталям.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="bi bi-lightning-charge"></i>
+                            <div>
+                                <h4>Скорость</h4>
+                                <p>Быстрое выполнение проектов без потери качества</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-currency-exchange"></i>
+                            <div>
+                                <h4>Доступные цены</h4>
+                                <p>Качественные услуги по конкурентным ценам</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-chat-dots"></i>
+                            <div>
+                                <h4>Поддержка</h4>
+                                <p>Постоянная коммуникация на всех этапах работы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="">
+                        <img src="./png/nl2.png" alt="О нас" class="img-fluid rounded" style="border-radius: 20%; width: 85%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция услуг -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Наши услуги</h2>
+            <p class="section-subtitle text-center">Мы предлагаем полный спектр услуг для digital-продвижения вашего бизнеса</p>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h3>Веб-разработка</h3>
+                        <p>Создаем современные адаптивные сайты, которые эффективно представляют ваш бизнес в интернете.</p>
+                        <button class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Веб-разработка">Подробнее</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-box"></i>
+                        </div>
+                        <h3>3D Моделирование</h3>
+                        <p>Создаем качественные 3D модели для визуализации продуктов, архитектурных проектов и игр.</p>
+                        <button class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="3D Моделирование">Подробнее</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h3>Дизайн логотипов</h3>
+                        <p>Разрабатываем уникальные запоминающиеся логотипы, которые отражают суть вашего бренда.</p>
+                        <button class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service="Дизайн логотипов">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция портфолио -->
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Наши работы</h2>
+            <p class="section-subtitle text-center">Ознакомьтесь с примерами наших проектов</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Все работы</button>
+                <button class="filter-btn" data-filter="3d">3D Модели</button>
+                <button class="filter-btn" data-filter="sites">Сайты</button>
+                <button class="filter-btn" data-filter="logos">Логотипы</button>
+            </div>
+            
+            <!-- Сетка портфолио -->
+            <div class="portfolio-grid">
+                <!-- 3D Модели -->
+                <div class="portfolio-item" data-category="3d">
+                    <div class="portfolio-card">
+                        <img src="./jpg/1.jpg" alt="3D Модель" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <h4>Архитектурная визуализация</h4>
+                            <p>Детализированная 3D модель жилого комплекса</p>
+                            <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="3d-1">Посмотреть проект</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="3d">
+                    <div class="portfolio-card">
+                        <img src="./jpg/2.jpg" alt="3D Модель" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <h4>Продуктовый дизайн</h4>
+                            <p>3D модель современного гаджета</p>
+                            <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="3d-2">Посмотреть проект</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="3d">
+                    <div class="portfolio-card">
+                        <img src="./jpg/3.jpg" alt="3D Модель" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <h4>Интерьерный дизайн</h4>
+                            <p>3D визуализация современной гостиной</p>
+                            <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="3d-3">Посмотреть проект</button>
+                        </div>
+                    </div>
+                </div>
+                
+  <!-- Логотипы -->
+            <div class="portfolio-item" data-category="logos">
+                <div class="portfolio-card">
+                    <img src="./png/11.png" alt="Логотип Ключ" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>Логотип "Ключ"</h4>
+                        <p>Для компании по недвижимости</p>
+                        <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="logo-1">Посмотреть проект</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="logos">
+                <div class="portfolio-card">
+                    <img src="./png/Панда.svg" alt="Логотип Панда" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>Логотип "Панда"</h4>
+                        <p>Для экологической организации</p>
+                        <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="logo-2">Посмотреть проект</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="logos">
+                <div class="portfolio-card">
+                    <img src="./png/ресницы.svg" alt="Логотип Ресницы" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>Логотип "Ресницы"</h4>
+                        <p>Для салона красоты</p>
+                        <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="logo-3">Посмотреть проект</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="logos">
+                <div class="portfolio-card">
+                    <img src="./png/Чёрно-белый.png" alt="Минималистичный логотип" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>Минималистичный логотип</h4>
+                        <p>Для IT-компании</p>
+                        <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="logo-4">Посмотреть проект</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="logos">
+                <div class="portfolio-card">
+                    <img src="./png/Часы.svg" alt="Логотип Часы" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>Логотип "Часы"</h4>
+                        <p>Для компании по недвижимости</p>
+                        <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="logo-1">Посмотреть проект</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="logos">
+                <div class="portfolio-card">
+                    <img src="./png/12.png" alt="Логотип Фитнес" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>Логотип "Фитнес"</h4>
+                        <p>Для фитнес-центра</p>
+                        <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="logo-5">Посмотреть проект</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="logos">
+                <div class="portfolio-card">
+                    <img src="./png/13.png" alt="Логотип Бренд" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>Логотип "Бренд"</h4>
+                        <p>Для современного бренда</p>
+                        <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="logo-6">Посмотреть проект</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="logos">
+                <div class="portfolio-card">
+                    <img src="./png/14.png" alt="Логотип Технологии" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>Логотип "Технологии"</h4>
+                        <p>Для IT-компании</p>
+                        <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="logo-7">Посмотреть проект</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="logos">
+                <div class="portfolio-card">
+                    <img src="./png/15.png" alt="Логотип Премиум" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>Логотип "Премиум"</h4>
+                        <p>Для премиум-бренда</p>
+                        <button class="btn btn-light view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="logo-8">Посмотреть проект</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+ <!-- Секция сайтов (изначально скрыта) -->
+<div id="sites-section" class="sites-section">
+    <h2 class="text-center header-3d mb-5">САЙТЫ</h2>
+    
+    <!-- Первый слайдер -->
+    <div class="custom-slider-wrapper">
+        <div id="sitesCarousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                    <img src="./jpg/1.1.png" class="d-block w-100" alt="Сайт 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/1.2.png" class="d-block w-100" alt="Сайт 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/1.3.png" class="d-block w-100" alt="Сайт 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/1.4.png" class="d-block w-100" alt="Сайт 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/1.5.png" class="d-block w-100" alt="Сайт 5">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <span class="slide-number">01/05</span>
+                <div class="d-flex gap-3">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sitesCarousel1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sitesCarousel1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h3 class="slider-caption text-center mt-4">Сайт по звукозаписи</h3>
+        <button class="btn custom-btn d-block mx-auto mt-3">ПОДРОБНЕЕ</button>
+    </div>
+
+    <!-- Второй слайдер -->
+    <div class="custom-slider-wrapper mt-5">
+        <div id="sitesCarousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                    <img src="./jpg/2.1.png" class="d-block w-100" alt="Сайт 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/2.2.png" class="d-block w-100" alt="Сайт 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/2.3.png" class="d-block w-100" alt="Сайт 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/2.4.png" class="d-block w-100" alt="Сайт 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/2.5.png" class="d-block w-100" alt="Сайт 5">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <span class="slide-number">01/05</span>
+                <div class="d-flex gap-3">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sitesCarousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sitesCarousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h3 class="slider-caption text-center mt-4">Сайт консультации лидеров</h3>
+        <button class="btn custom-btn d-block mx-auto mt-3">ПОДРОБНЕЕ</button>
+    </div>
+
+    <!-- Третий слайдер -->
+    <div class="custom-slider-wrapper mt-5">
+        <div id="sitesCarousel3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                    <img src="./jpg/3.1.png" class="d-block w-100" alt="Сайт 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/3.2.png" class="d-block w-100" alt="Сайт 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/3.3.png" class="d-block w-100" alt="Сайт 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/3.4.png" class="d-block w-100" alt="Сайт 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/3.5.png" class="d-block w-100" alt="Сайт 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/3.6.png" class="d-block w-100" alt="Сайт 6">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <span class="slide-number">01/06</span>
+                <div class="d-flex gap-3">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sitesCarousel3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sitesCarousel3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h3 class="slider-caption text-center mt-4">Сайт резюме</h3>
+        <button class="btn custom-btn d-block mx-auto mt-3">ПОДРОБНЕЕ</button>
+    </div>
+
+    <!-- Четвёртый слайдер -->
+    <div class="custom-slider-wrapper mt-5">
+        <div id="sitesCarousel4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                    <img src="./jpg/4.1.png" class="d-block w-100" alt="Сайт 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/4.2.png" class="d-block w-100" alt="Сайт 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/4.3.png" class="d-block w-100" alt="Сайт 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/4.4.png" class="d-block w-100" alt="Сайт 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/4.5.png" class="d-block w-100" alt="Сайт 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/4.6.png" class="d-block w-100" alt="Сайт 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/4.7.png" class="d-block w-100" alt="Сайт 7">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/4.8.png" class="d-block w-100" alt="Сайт 8">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/4.9.png" class="d-block w-100" alt="Сайт 9">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <span class="slide-number">01/09</span>
+                <div class="d-flex gap-3">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sitesCarousel4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sitesCarousel4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h3 class="slider-caption text-center mt-4">Сайт тур по белому озеру</h3>
+        <button class="btn custom-btn d-block mx-auto mt-3">ПОДРОБНЕЕ</button>
+    </div>
+
+    <!-- Пятый слайдер -->
+    <div class="custom-slider-wrapper mt-5">
+        <div id="sitesCarousel5" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                    <img src="./jpg/5.1.png" class="d-block w-100" alt="Сайт 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/5.2.png" class="d-block w-100" alt="Сайт 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/5.3.png" class="d-block w-100" alt="Сайт 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/5.4.png" class="d-block w-100" alt="Сайт 4">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <span class="slide-number">01/04</span>
+                <div class="d-flex gap-3">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sitesCarousel5" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sitesCarousel5" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h3 class="slider-caption text-center mt-4">Сайт по консультации</h3>
+        <button class="btn custom-btn d-block mx-auto mt-3">ПОДРОБНЕЕ</button>
+    </div>
+
+    <!-- Шестой слайдер - сайт ремонт окон -->
+    <div class="custom-slider-wrapper mt-5">
+        <div id="sitesCarousel6" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                    <img src="./jpg/6.1.png" class="d-block w-100 carousel-image" alt="Сайт 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/6.2.png" class="d-block w-100 carousel-image" alt="Сайт 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/6.3.png" class="d-block w-100 carousel-image" alt="Сайт 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/6.4.png" class="d-block w-100 carousel-image" alt="Сайт 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/6.5.png" class="d-block w-100 carousel-image" alt="Сайт 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/6.6.png" class="d-block w-100 carousel-image" alt="Сайт 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/6.7.png" class="d-block w-100 carousel-image" alt="Сайт 7">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/6.8.png" class="d-block w-100 carousel-image" alt="Сайт 8">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/6.9.png" class="d-block w-100 carousel-image" alt="Сайт 9">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/6.10.png" class="d-block w-100 carousel-image" alt="Сайт 10">
+                </div>
+                <div class="carousel-item">
+                    <img src="./jpg/6.11.png" class="d-block w-100 carousel-image" alt="Сайт 11">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <span class="slide-number">01/11</span>
+                <div class="d-flex gap-3">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sitesCarousel6" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sitesCarousel6" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h3 class="slider-caption text-center mt-4">Сайт ремонт окон</h3>
+        <button class="btn custom-btn d-block mx-auto mt-3">ПОДРОБНЕЕ</button>
+    </div>
+</div>
+     
+            
+            <div class="text-center mt-5">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Обсудить ваш проект</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция отзывов -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Отзывы клиентов</h2>
+            <p class="section-subtitle text-center">Что говорят о нашей работе</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="./jpg/Vania.jpg" alt="Иван Петров" class="testimonial-avatar">
+                            <div>
+                                <h5>Иван Петров</h5>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">Классные ребята, выполняют качественную работу! Сделали для меня сайт, который действительно привлекает клиентов. Рекомендую!</p>
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="./jpg/ALENA.jpg" alt="Алена Смирнова" class="testimonial-avatar">
+                            <div>
+                                <h5>Алена Смирнова</h5>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">Оперативно сработали, спасибо!!! Логотип получился что надо! Теперь у моего салона есть узнаваемый бренд.</p>
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="./jpg/Dima.jpg" alt="Дмитрий Иванов" class="testimonial-avatar">
+                            <div>
+                                <h5>Дмитрий Иванов</h5>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">Заказывал себе 3D визуализацию проекта)) все на высшем уровне! рекомендую!😎 Теперь могу наглядно показывать клиентам, как будет выглядеть их дом.</p>
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция призыва к действию -->
+    <section class="cta section-padding">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>Готовы начать проект?</h2>
+                <p>Оставьте заявку и мы обсудим ваши идеи. Предложим решения, которые помогут вашему бизнесу выделиться и достичь новых высот.</p>
+                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#contactModal">Обсудить проект</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer id="contact" class="footer section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-info">
+                        <img src="./png/nl2.png" alt="CreativeTeam" class="footer-logo" style="height: 150px;">
+                        <p>Создаем digital-продукты, которые работают на успешность вашего бизнеса. Профессиональные 3D модели, веб-сайты и дизайн.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-vk"></i></a>
+                            <a href="#"><i class="bi bi-telegram"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Навигация</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#testimonials">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Услуги</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">3D Моделирование</a></li>
+                        <li><a href="#">Веб-разработка</a></li>
+                        <li><a href="#">Дизайн логотипов</a></li>
+                        <li><a href="#">UI/UX Дизайн</a></li>
+                        <li><a href="#">Брендинг</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Контакты</h5>
+                    <ul class="footer-contacts">
+                        <li><i class="bi bi-envelope"></i> daniel.staryh@yandex.ru</li>
+                        <li><i class="bi bi-telephone"></i> 8 (908) 482-85-04</li>
+                        <li><i class="bi bi-clock"></i> Пн-Пт: 9:00 - 18:00</li>
+                        <li><i class="bi bi-geo-alt"></i> Россия, г. Москва</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CreativeTeam. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <!-- Модальное окно контактов -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Обсудить проект</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Опишите ваш проект</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- //////////////////////////////////////////////////// -->
+    <!-- Модальное окно услуги -->
+    <div class="modal fade" id="serviceModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalTitle">Услуга</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="serviceModalContent">
+                        <!-- Контент будет загружен через JS -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#contactModal">Заказать услугу</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно проекта -->
+    <div class="modal fade" id="projectModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalTitle">Проект</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="projectModalContent">
+                        <!-- Контент будет загружен через JS -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#contactModal">Заказать аналогичный проект</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка назад вверх -->
+    <button id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Подключаем Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Подключаем наш JS -->
+    <script src="./PORTFOLIO.js"></script>
+</body>
+</html>
